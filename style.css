@@ -1,0 +1,409 @@
+body {
+    font-family: "Cinzel", serif;
+    margin: 0;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section {
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 50px;
+}
+
+.main-title {
+    user-select: none;
+}
+
+.main-title-element {
+    margin: 0;
+    font-size: 100px;
+    position: absolute;
+    top: -33px;
+}
+
+.main-title-element-container {
+    position: relative;
+    width: 600px;
+    height: 70px;
+    display: flex;
+}
+
+#main-title-element-container-1 {
+    justify-content: flex-start;
+}
+#main-title-element-container-2 {
+    justify-content: center;
+}
+#main-title-element-container-3 {
+    justify-content: flex-end;
+}
+
+#center-container-1 {
+    width: 100%;
+    gap: 50px;
+}
+
+.avatar {
+    height: 200px;
+    border-radius: 50% 0 50% 0;
+    border: 10px solid white;
+    border-top: none;
+    box-shadow: 100px 0px black;
+    margin-right: 100px;
+}
+
+.role {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#center-container-2 {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.main-section {
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-section-block {
+    width: 50%;
+    color: white;
+    margin-top: 50px;
+    padding: 25px;
+    background: linear-gradient(to bottom, #181818, #181818, rgb(0, 0, 0, 0.15));
+    border-radius: 5px;
+}
+
+.main-section-block p {
+    text-align: justify;
+}
+
+.main-section-block-title {
+    font-size: 35px;
+    margin: 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.skills-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-list > li {
+    width: 100%;
+    list-style: none;
+    padding: 25px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0, 0.25);
+}
+
+.skills-list-ul {
+    list-style: none;
+    padding: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+.plans-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.plans-list > li {
+    list-style: none;
+    width: 100%;
+    list-style: none;
+    padding: 25px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0, 0.25);
+}
+
+.writing-ul > li {
+    list-style: none;
+}
+
+.main-section > div:last-child {
+    margin-bottom: 50px;
+}
+
+.footer-section {
+    height: 20vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.sign {
+    font-weight: 700;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.album {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 0 30px 0 30px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0, 0.25);
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.album > img {
+    height: 500px;
+    width: 600px;
+    margin: 16px 0 16px 0;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid white;
+}
+
+.album > img:nth-child(odd) {
+    align-self: flex-start;
+}
+
+.album > img:nth-child(even) {
+    align-self: flex-end;
+}
+
+.album::-webkit-scrollbar {
+    display: none;
+}
+
+.bold-text {
+    font-weight: 800;
+}
+
+.semibold-text {
+    font-weight: 500;
+}
+
+.text-mr {
+    margin-right: 10px;
+}
+
+.google-maps {
+    color: rgb(255, 255, 255, 0.5);
+}
+
+@media (max-width: 1400px) {
+    .album > img {
+        height: 300px;
+        width: 400px;
+        margin: 16px 0 16px 0;
+        border-radius: 10px;
+        object-fit: cover;
+        border: 1px solid white;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-title-element {
+        margin: 0;
+        font-size: 75px;
+        position: absolute;
+        top: -33px;
+    }
+
+    .main-title-element-container {
+        position: relative;
+        width: 450px;
+        height: 50px;
+        display: flex;
+    }
+
+    .avatar {
+        height: 150px;
+        border-radius: 50% 0 50% 0;
+        border: 7.5px solid white;
+        border-top: none;
+        box-shadow: 75px 0px black;
+        margin-right: 75px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .album > img:nth-child(odd) {
+        align-self: unset;
+    }
+    
+    .album > img:nth-child(even) {
+        align-self: unset;
+    }
+
+    .album {
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        padding: 0 30px 0 30px;
+        border-radius: 5px;
+        background-color: rgb(0, 0, 0, 0.25);
+        overflow: auto;
+        scrollbar-width: none;
+    }
+
+    .main-section-block {
+        width: 75%;
+        color: white;
+        margin-top: 50px;
+        padding: 25px;
+        background: linear-gradient(to bottom, #181818, #181818, rgb(0, 0, 0, 0.15));
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-title-element {
+        margin: 0;
+        font-size: 50px;
+        position: absolute;
+        top: -33px;
+    }
+
+    .main-title-element-container {
+        position: relative;
+        width: 300px;
+        height: 35px;
+        display: flex;
+    }
+
+    .avatar {
+        height: 125px;
+        border-radius: 50% 0 50% 0;
+        border: 7px solid white;
+        border-top: none;
+        box-shadow: 50px 0px black;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .center-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #center-container-2 {
+        width: 75%;
+        justify-content: unset;
+        flex-direction: column;
+        align-self: center;
+    }
+    
+    .role {
+        align-self: flex-start;
+    }
+
+    .role:nth-child(even) {
+        align-self: flex-end;
+    }
+
+    .album > img {
+        height: 250px;
+        width: 300px;
+        margin: 16px 0 16px 0;
+        border-radius: 10px;
+        object-fit: cover;
+        border: 1px solid white;
+    }
+
+    
+}
+
+@media (max-width: 500px) {
+    .main-section-block {
+        width: 90%;
+        color: white;
+        margin-top: 50px;
+        padding: 20px;
+        background: linear-gradient(to bottom, #181818, #181818, rgb(0, 0, 0, 0.15));
+        border-radius: 5px;
+    }
+
+    .avatar {
+        height: 150px;
+        border-radius: 50% 0 50% 0;
+        border: 7.5px solid white;
+        border-top: none;
+        box-shadow: 75px 0px black;
+        margin-right: 75px;
+    }
+
+    .links-container > a {
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-section-block {
+        width: 90%;
+        color: white;
+        margin-top: 50px;
+        padding: 20px;
+        background: linear-gradient(to bottom, #181818, #181818, rgb(0, 0, 0, 0.15));
+        border-radius: 5px;
+    }
+
+    .main-section-block p {
+        text-align: unset;
+    }
+}
+
+@media (max-width: 360px) {
+    .album > img {
+        height: 200px;
+        width: 250px;
+        margin: 16px 0 16px 0;
+        border-radius: 10px;
+        object-fit: cover;
+        border: 1px solid white;
+    }
+}
